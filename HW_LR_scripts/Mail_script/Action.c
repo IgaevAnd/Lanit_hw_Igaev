@@ -1,6 +1,8 @@
 Action()
 {
 
+	lr_start_transaction("UC_Mail_script_transaaction");
+	
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
 	web_reg_find("Text=Авторизация", 
@@ -47,18 +49,21 @@ Action()
 		LAST);
 	
 	
-	lr_start_transaction("Login_transaction");	
+	lr_start_transaction("UC01_Login_transaction");	
 
 	authorization_func();
 	
-	lr_end_transaction("Login_transaction",LR_AUTO);
+	lr_end_transaction("UC01_Login_transaction",LR_AUTO);
 	
 		
-	lr_start_transaction("Send_transaction");
+	lr_start_transaction("UC02_Send_transaction");
 
 	send_mail_func();
 
-	lr_end_transaction("Send_transaction",LR_AUTO);
+	lr_end_transaction("UC02_Send_transaction",LR_AUTO);
+	
+	
+	lr_end_transaction("UC_Mail_script_transaaction",LR_AUTO);
 
 	return 0;
 }

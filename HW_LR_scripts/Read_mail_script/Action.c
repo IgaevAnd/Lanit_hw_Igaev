@@ -1,6 +1,8 @@
 Action()
 {
-
+	
+	lr_start_transaction("UC_Read_mail_script_transaction");
+	
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
 	web_reg_find("Text=Авторизация", 
@@ -46,15 +48,15 @@ Action()
 
 	
 
-	lr_start_transaction("Login_transaction");
+	lr_start_transaction("UC01_Login_transaction");
 
 	authorization_func();
 
-	lr_end_transaction("Login_transaction",LR_AUTO);
+	lr_end_transaction("UC01_Login_transaction",LR_AUTO);
 	
 
 
-	lr_start_transaction("Inbox_transaction");
+	lr_start_transaction("UC02_Inbox_transaction");
 
 	web_reg_find("Text=Входящие", 
 		LAST);
@@ -79,7 +81,7 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-	lr_end_transaction("Inbox_transaction", LR_AUTO);
+	lr_end_transaction("UC02_Inbox_transaction", LR_AUTO);
 
 	
 	
@@ -95,7 +97,7 @@ Action()
 
 
 
-	lr_start_transaction("GoToMail_transaction");
+	lr_start_transaction("UC03_Go_To_Mail_transaction");
 
 	web_reg_find("Text=Входящие", 
 		LAST);
@@ -121,11 +123,11 @@ Action()
 		"Mode=HTML",
 		LAST);
 
-	lr_end_transaction("GoToMail_transaction",LR_AUTO);
+	lr_end_transaction("UC03_Go_To_Mail_transaction",LR_AUTO);
 
 	
 	
-	lr_start_transaction("RedirectMail_transaction");
+	lr_start_transaction("UC04_Redirect_Mail_transaction");
 
 	web_reg_find("Text=Входящие", 
 		LAST);
@@ -187,12 +189,12 @@ Action()
 		"Name=move", "Value=Выполнить", ENDITEM,
 		LAST);
 
-	lr_end_transaction("RedirectMail_transaction",LR_AUTO);
+	lr_end_transaction("UC04_Redirect_Mail_transaction",LR_AUTO);
 
 
 	
 
-	lr_start_transaction("GoInbox_transaction");
+	lr_start_transaction("UC05_Go_Inbox_transaction");
 
 	web_reg_find("Text=Входящие", 
 		LAST);
@@ -207,8 +209,11 @@ Action()
 		"Mode=HTML",
 		LAST);
 
-	lr_end_transaction("GoInbox_transaction",LR_AUTO);
+	lr_end_transaction("UC05_Go_Inbox_transaction",LR_AUTO);
 	}
-
+    
+	lr_end_transaction("UC_Read_mail_script_transaction",LR_AUTO);
+    
+    
 	return 0;
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VugenScriptMetadata>
-  <ScriptName>Mail_script</ScriptName>
+  <ScriptName>mail_script</ScriptName>
   <Protocol>Web - HTTP/HTML</Protocol>
   <ActionFiles>
     <FileEntry Name="vuser_init.c" Filter="2" />
@@ -8,7 +8,7 @@
     <FileEntry Name="vuser_end.c" Filter="2" />
   </ActionFiles>
   <GeneralFiles>
-    <FileEntry Name="Mail_script.usr" Filter="4" />
+    <FileEntry Name="mail_script.usr" Filter="4" />
     <FileEntry Name="default.cfg" Filter="4" />
     <FileEntry Name="default.usp" Filter="4" />
     <FileEntry Name="DfeConfig\" Filter="4" />
@@ -19,113 +19,11 @@
     <FileEntry Name="globals.h" Filter="2" />
     <FileEntry Name="authorization_func.c" Filter="2" />
     <FileEntry Name="send_mail_func.c" Filter="2" />
-    <FileEntry Name="combined_Mail_script.c" Filter="2" />
-    <FileEntry Name="pre_cci.c" Filter="2" />
-    <FileEntry Name="136831794441.idx" Filter="1" />
-    <FileEntry Name="13683179491.idx" Filter="1" />
-    <FileEntry Name="1368317949_0mH.283.idx" Filter="1" />
-    <FileEntry Name="1368317949_12Q.173.idx" Filter="1" />
-    <FileEntry Name="1368317949_1yF.921.idx" Filter="1" />
-    <FileEntry Name="1368317949_1yO.239.idx" Filter="1" />
-    <FileEntry Name="1368317949_33i.389.idx" Filter="1" />
-    <FileEntry Name="1368317949_3RU.55.idx" Filter="1" />
-    <FileEntry Name="1368317949_6oN.795.idx" Filter="1" />
-    <FileEntry Name="1368317949_779.703.idx" Filter="1" />
-    <FileEntry Name="1368317949_8L4.69.idx" Filter="1" />
-    <FileEntry Name="1368317949_8QO.39.idx" Filter="1" />
-    <FileEntry Name="1368317949_8rb.127.idx" Filter="1" />
-    <FileEntry Name="1368317949_9Dv.727.idx" Filter="1" />
-    <FileEntry Name="1368317949_9e6.245.idx" Filter="1" />
-    <FileEntry Name="1368317949_9Ng.679.idx" Filter="1" />
-    <FileEntry Name="1368317949_9tk.771.idx" Filter="1" />
-    <FileEntry Name="1368317949_a00.779.idx" Filter="1" />
-    <FileEntry Name="1368317949_a0f.887.idx" Filter="1" />
-    <FileEntry Name="1368317949_aAW.823.idx" Filter="1" />
-    <FileEntry Name="1368317949_av4.267.idx" Filter="1" />
-    <FileEntry Name="1368317949_Avb.53.idx" Filter="1" />
-    <FileEntry Name="1368317949_bcv.105.idx" Filter="1" />
-    <FileEntry Name="1368317949_bdv.251.idx" Filter="1" />
-    <FileEntry Name="1368317949_Beq.97.idx" Filter="1" />
-    <FileEntry Name="1368317949_CPH.625.idx" Filter="1" />
-    <FileEntry Name="1368317949_CSy.815.idx" Filter="1" />
-    <FileEntry Name="1368317949_D6M.935.idx" Filter="1" />
-    <FileEntry Name="1368317949_dEl.615.idx" Filter="1" />
-    <FileEntry Name="1368317949_dFy.565.idx" Filter="1" />
-    <FileEntry Name="1368317949_dgg.47.idx" Filter="1" />
-    <FileEntry Name="1368317949_dtD.579.idx" Filter="1" />
-    <FileEntry Name="1368317949_eLY.845.idx" Filter="1" />
-    <FileEntry Name="1368317949_eOy.749.idx" Filter="1" />
-    <FileEntry Name="1368317949_fA8.741.idx" Filter="1" />
-    <FileEntry Name="1368317949_FBF.63.idx" Filter="1" />
-    <FileEntry Name="1368317949_fPH.647.idx" Filter="1" />
-    <FileEntry Name="1368317949_FQS.887.idx" Filter="1" />
-    <FileEntry Name="1368317949_ftD.555.idx" Filter="1" />
-    <FileEntry Name="1368317949_ftl.123.idx" Filter="1" />
-    <FileEntry Name="1368317949_HM0.5.idx" Filter="1" />
-    <FileEntry Name="1368317949_hRb.933.idx" Filter="1" />
-    <FileEntry Name="1368317949_hYD.347.idx" Filter="1" />
-    <FileEntry Name="1368317949_i4W.153.idx" Filter="1" />
-    <FileEntry Name="1368317949_imd.39.idx" Filter="1" />
-    <FileEntry Name="1368317949_IOA.215.idx" Filter="1" />
-    <FileEntry Name="1368317949_iSp.619.idx" Filter="1" />
-    <FileEntry Name="1368317949_JPw.717.idx" Filter="1" />
-    <FileEntry Name="1368317949_jYB.77.idx" Filter="1" />
-    <FileEntry Name="1368317949_k81.383.idx" Filter="1" />
-    <FileEntry Name="1368317949_kDJ.755.idx" Filter="1" />
-    <FileEntry Name="1368317949_Kh4.29.idx" Filter="1" />
-    <FileEntry Name="1368317949_ki3.935.idx" Filter="1" />
-    <FileEntry Name="1368317949_Loc.755.idx" Filter="1" />
-    <FileEntry Name="1368317949_Lpq.739.idx" Filter="1" />
-    <FileEntry Name="1368317949_lVe.957.idx" Filter="1" />
-    <FileEntry Name="1368317949_Mob.631.idx" Filter="1" />
-    <FileEntry Name="1368317949_n2y.947.idx" Filter="1" />
-    <FileEntry Name="1368317949_ny9.453.idx" Filter="1" />
-    <FileEntry Name="1368317949_OPB.145.idx" Filter="1" />
-    <FileEntry Name="1368317949_Q6V.889.idx" Filter="1" />
-    <FileEntry Name="1368317949_qIw.447.idx" Filter="1" />
-    <FileEntry Name="1368317949_Qjc.299.idx" Filter="1" />
-    <FileEntry Name="1368317949_qUA.617.idx" Filter="1" />
-    <FileEntry Name="1368317949_qZh.823.idx" Filter="1" />
-    <FileEntry Name="1368317949_R5U.505.idx" Filter="1" />
-    <FileEntry Name="1368317949_s68.817.idx" Filter="1" />
-    <FileEntry Name="1368317949_s9C.327.idx" Filter="1" />
-    <FileEntry Name="1368317949_Sja.551.idx" Filter="1" />
-    <FileEntry Name="1368317949_tvs.477.idx" Filter="1" />
-    <FileEntry Name="1368317949_TZq.377.idx" Filter="1" />
-    <FileEntry Name="1368317949_UE1.577.idx" Filter="1" />
-    <FileEntry Name="1368317949_UEc.5.idx" Filter="1" />
-    <FileEntry Name="1368317949_umC.447.idx" Filter="1" />
-    <FileEntry Name="1368317949_uP8.685.idx" Filter="1" />
-    <FileEntry Name="1368317949_urc.957.idx" Filter="1" />
-    <FileEntry Name="1368317949_UVO.351.idx" Filter="1" />
-    <FileEntry Name="1368317949_VpU.905.idx" Filter="1" />
-    <FileEntry Name="1368317949_Vyd.17.idx" Filter="1" />
-    <FileEntry Name="1368317949_WBi.469.idx" Filter="1" />
-    <FileEntry Name="1368317949_WKk.7.idx" Filter="1" />
-    <FileEntry Name="1368317949_wWK.481.idx" Filter="1" />
-    <FileEntry Name="1368317949_wYr.633.idx" Filter="1" />
-    <FileEntry Name="1368317949_X1S.885.idx" Filter="1" />
-    <FileEntry Name="1368317949_XmW.759.idx" Filter="1" />
-    <FileEntry Name="1368317949_XS6.653.idx" Filter="1" />
-    <FileEntry Name="1368317949_y9G.529.idx" Filter="1" />
-    <FileEntry Name="1368317949_YLK.23.idx" Filter="1" />
-    <FileEntry Name="1368317949_YXW.977.idx" Filter="1" />
-    <FileEntry Name="1368317949_YYs.595.idx" Filter="1" />
-    <FileEntry Name="1368317949_zdN.607.idx" Filter="1" />
-    <FileEntry Name="1368317949_zeZ.651.idx" Filter="1" />
-    <FileEntry Name="1368317949_ZfT.239.idx" Filter="1" />
-    <FileEntry Name="1368317949_zim.937.idx" Filter="1" />
-    <FileEntry Name="1368317949_zJA.731.idx" Filter="1" />
-    <FileEntry Name="1368317949_ZQp.367.idx" Filter="1" />
-    <FileEntry Name="244965860441.idx" Filter="1" />
-    <FileEntry Name="611249441.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="data.zip" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
-    <FileEntry Name="Mail_script.c.pickle" Filter="1" />
-    <FileEntry Name="Mail_script.ci" Filter="1" />
     <FileEntry Name="Mail_script.prm.bak" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
